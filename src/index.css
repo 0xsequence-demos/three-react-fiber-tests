@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Fredoka, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --base-unit: 16;
+
+  --radius: initial;
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 0.75rem;
+  --border-radius-xl: 1rem;
+
+  --animate-scale: scale 2.5s ease-in-out infinite;
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  --animate-beacon: beacon 2.5s ease-in-out infinite;
+
+  @keyframes beacon {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@utility text-* {
+  font-size: calc(--value(integer) / var(--base-unit) * 1rem);
+}
+
+@utility text-stroke-* {
+  -webkit-text-stroke-width: calc(--value(integer) * 1px);
+}
+
+@utility rounded-* {
+  border-radius: --value(--border-radius- *);
+  border-radius: calc(--value(integer) / var(--base-unit) * 1rem);
+}
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: Fredoka, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 600;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: unset;
+}

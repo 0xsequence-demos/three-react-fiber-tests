@@ -1,0 +1,48 @@
+{
+  "name": "kit-mining-game-demo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./src/main.tsx",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "depcheck": "depcheck"
+  },
+  "dependencies": {
+    "@0xsequence/design-system": "^1.9.0",
+    "@react-spring/three": "^9.7.5",
+    "@react-three/drei": "^9.121.5",
+    "@react-three/fiber": "^8.17.14",
+    "@react-three/postprocessing": "^2.19.1",
+    "@tailwindcss/vite": "^4.0.10",
+    "framer-motion": "^8.5.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^4.0.7",
+    "three": "^0.173.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "@types/node": "^20.12.12",
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.3.0",
+    "@types/three": "^0.173.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "depcheck": "^1.4.7",
+    "eslint": "^9.12.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react-hooks": "5.1.0-rc-fb9a90fa48-20240614",
+    "eslint-plugin-react-refresh": "^0.4.12",
+    "globals": "^15.10.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.8.0",
+    "vite": "^5.4.8"
+  },
+  "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0"
+}
